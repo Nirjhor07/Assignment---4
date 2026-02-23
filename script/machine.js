@@ -38,4 +38,27 @@ function hideAllClasses(id) {
     const showClass = document.getElementById(id);
     showClass.classList.remove("hidden");
   }
+  resetButton(id);
+}
+
+// the rest button will be reset when the other button clicked
+function resetButton(activeButton) {
+  //get all the filter buttons
+  const allBtn = document.querySelector('[data-filter="all"]');
+  const interviewBtn = document.querySelector('[data-filter="interview"]');
+  const rejectBtn = document.querySelector('[data-filter="rejected"]');
+
+  //reset all buttons to outlined style
+  allBtn.className = "btn btn-outline btn-primary";
+  interviewBtn.className = "btn btn-outline btn-primary";
+  rejectBtn.className = "btn btn-outline btn-primary";
+
+  // now check which button pressed and set the button to solid style
+  if (activeButton === "all") {
+    allBtn.className = "btn btn-primary";
+  } else if (activeButton === "interview-section") {
+    interviewBtn.className = "btn btn-primary";
+  } else if (activeButton === "rejected-section") {
+    rejectBtn.className = "btn btn-primary";
+  }
 }

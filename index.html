@@ -75,29 +75,29 @@
         id="buttons"
         class="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full sm:w-4/12"
       >
-        <input
+        <button
           onclick="hideAllClasses('all')"
-          class="btn btn-primary btn-soft"
-          type="checkbox"
-          name="frameworks"
-          aria-label="all"
-        />
-        <input
+          class="btn btn-primary"
+          data-filter="all"
+        >
+          All
+        </button>
+        <button
           onclick="hideAllClasses('interview-section')"
           id="interview-btn"
-          class="btn btn-primary btn-soft"
-          type="checkbox"
-          name="frameworks"
-          aria-label="Interview"
-        />
-        <input
+          class="btn btn-outline btn-primary"
+          data-filter="interview"
+        >
+          Interview
+        </button>
+        <button
           onclick="hideAllClasses('rejected-section')"
           id="rejected-btn"
-          class="btn btn-primary btn-soft"
-          type="checkbox"
-          name="frameworks"
-          aria-label="Rejected"
-        />
+          class="btn btn-outline btn-primary"
+          data-filter="rejected"
+        >
+          Rejected
+        </button>
       </div>
     </section>
 
