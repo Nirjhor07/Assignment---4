@@ -76,6 +76,7 @@
         class="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full sm:w-4/12"
       >
         <input
+          onclick="hideAllClasses('all')"
           class="btn btn-primary btn-soft"
           type="checkbox"
           name="frameworks"
@@ -90,6 +91,8 @@
           aria-label="Interview"
         />
         <input
+          onclick="hideAllClasses('rejected-section')"
+          id="rejected-btn"
           class="btn btn-primary btn-soft"
           type="checkbox"
           name="frameworks"
@@ -331,6 +334,25 @@
     <!-- Interview Section -->
     <section
       id="interview-section"
+      class="w-10/12 mx-auto space-y-2.5 mt-3.5 hidden"
+    >
+      <div
+        id="card-8"
+        class="card bg-base-100 shadow w-full flex justify-center items-center space-y-2 p-27"
+      >
+        <div class="W-[220PX]">
+          <img src="assets/jobs.png" alt="" />
+        </div>
+        <h1 class="text-neutral text-2xl">No jobs available</h1>
+        <p class="text-sm text-neutral">
+          Check back soon for new job opportunities
+        </p>
+      </div>
+    </section>
+
+    <!-- rejected Section -->
+    <section
+      id="rejected-section"
       class="w-10/12 mx-auto space-y-2.5 mt-3.5 hidden"
     >
       <div
