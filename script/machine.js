@@ -53,7 +53,7 @@ function resetButton(activeButton) {
   interviewBtn.className = "btn btn-outline btn-primary";
   rejectBtn.className = "btn btn-outline btn-primary";
 
-  // now check which button pressed and set the button to solid style
+  //check which button was pressed and the set the button to btn-primary style
   if (activeButton === "all") {
     allBtn.className = "btn btn-primary";
   } else if (activeButton === "interview-section") {

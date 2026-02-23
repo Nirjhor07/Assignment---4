@@ -122,11 +122,21 @@
             Build cross-platform mobile applications using React Native. Work on
             products used by millions of users worldwide.
           </p>
+
           <!-- buttons for interview and rejection -->
           <div class="card-actions justify-start">
-            <div class="btn btn-outline btn-primary rounded-sm">Interview</div>
-            <div class="btn btn-outline btn-secondary rounded-sm">Rejected</div>
-            <!-- <button class="badge badge-outline">Interview</button> -->
+            <button
+              onclick="handleInterviewClick(1)"
+              class="btn btn-outline btn-primary rounded-sm"
+            >
+              Interview
+            </button>
+            <button
+              onclick="handleRejectedClick(1)"
+              class="btn btn-outline btn-secondary rounded-sm"
+            >
+              Rejected
+            </button>
           </div>
         </div>
       </div>
@@ -371,5 +381,7 @@
 
     <!-- all js scripts -->
     <script src="script/machine.js"></script>
+    <script src="script/interview.js"></script>
+    <script src="script/rejection.js"></script>
   </body>
 </html>
