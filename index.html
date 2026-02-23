@@ -159,11 +159,19 @@
             Create stunning web experiences for high-profile clients. Must have
             portfolio and experience with modern web design trends.
           </p>
-          <!-- buttons for interview and rejection -->
           <div class="card-actions justify-start">
-            <div class="btn btn-outline btn-primary rounded-sm">Interview</div>
-            <div class="btn btn-outline btn-secondary rounded-sm">Rejected</div>
-            <!-- <button class="badge badge-outline">Interview</button> -->
+            <button
+              onclick="handleInterviewClick(2)"
+              class="btn btn-outline btn-primary rounded-sm"
+            >
+              Interview
+            </button>
+            <button
+              onclick="handleRejectedClick(2)"
+              class="btn btn-outline btn-secondary rounded-sm"
+            >
+              Rejected
+            </button>
           </div>
         </div>
       </div>
@@ -189,9 +197,18 @@
           </p>
           <!-- buttons for interview and rejection -->
           <div class="card-actions justify-start">
-            <div class="btn btn-outline btn-primary rounded-sm">Interview</div>
-            <div class="btn btn-outline btn-secondary rounded-sm">Rejected</div>
-            <!-- <button class="badge badge-outline">Interview</button> -->
+            <button
+              onclick="handleInterviewClick(3)"
+              class="btn btn-outline btn-primary rounded-sm"
+            >
+              Interview
+            </button>
+            <button
+              onclick="handleRejectedClick(3)"
+              class="btn btn-outline btn-secondary rounded-sm"
+            >
+              Rejected
+            </button>
           </div>
         </div>
       </div>
@@ -217,9 +234,18 @@
           </p>
           <!-- buttons for interview and rejection -->
           <div class="card-actions justify-start">
-            <div class="btn btn-outline btn-primary rounded-sm">Interview</div>
-            <div class="btn btn-outline btn-secondary rounded-sm">Rejected</div>
-            <!-- <button class="badge badge-outline">Interview</button> -->
+            <button
+              onclick="handleInterviewClick(4)"
+              class="btn btn-outline btn-primary rounded-sm"
+            >
+              Interview
+            </button>
+            <button
+              onclick="handleRejectedClick(4)"
+              class="btn btn-outline btn-secondary rounded-sm"
+            >
+              Rejected
+            </button>
           </div>
         </div>
       </div>
@@ -246,9 +272,18 @@
           </p>
           <!-- buttons for interview and rejection -->
           <div class="card-actions justify-start">
-            <div class="btn btn-outline btn-primary rounded-sm">Interview</div>
-            <div class="btn btn-outline btn-secondary rounded-sm">Rejected</div>
-            <!-- <button class="badge badge-outline">Interview</button> -->
+            <button
+              onclick="handleInterviewClick(5)"
+              class="btn btn-outline btn-primary rounded-sm"
+            >
+              Interview
+            </button>
+            <button
+              onclick="handleRejectedClick(5)"
+              class="btn btn-outline btn-secondary rounded-sm"
+            >
+              Rejected
+            </button>
           </div>
         </div>
       </div>
@@ -275,9 +310,18 @@
           </p>
           <!-- buttons for interview and rejection -->
           <div class="card-actions justify-start">
-            <div class="btn btn-outline btn-primary rounded-sm">Interview</div>
-            <div class="btn btn-outline btn-secondary rounded-sm">Rejected</div>
-            <!-- <button class="badge badge-outline">Interview</button> -->
+            <button
+              onclick="handleInterviewClick(6)"
+              class="btn btn-outline btn-primary rounded-sm"
+            >
+              Interview
+            </button>
+            <button
+              onclick="handleRejectedClick(6)"
+              class="btn btn-outline btn-secondary rounded-sm"
+            >
+              Rejected
+            </button>
           </div>
         </div>
       </div>
@@ -304,9 +348,18 @@
           </p>
           <!-- buttons for interview and rejection -->
           <div class="card-actions justify-start">
-            <div class="btn btn-outline btn-primary rounded-sm">Interview</div>
-            <div class="btn btn-outline btn-secondary rounded-sm">Rejected</div>
-            <!-- <button class="badge badge-outline">Interview</button> -->
+            <button
+              onclick="handleInterviewClick(7)"
+              class="btn btn-outline btn-primary rounded-sm"
+            >
+              Interview
+            </button>
+            <button
+              onclick="handleRejectedClick(7)"
+              class="btn btn-outline btn-secondary rounded-sm"
+            >
+              Rejected
+            </button>
           </div>
         </div>
       </div>
@@ -333,9 +386,18 @@
           </p>
           <!-- buttons for interview and rejection -->
           <div class="card-actions justify-start">
-            <div class="btn btn-outline btn-primary rounded-sm">Interview</div>
-            <div class="btn btn-outline btn-secondary rounded-sm">Rejected</div>
-            <!-- <button class="badge badge-outline">Interview</button> -->
+            <button
+              onclick="handleInterviewClick(8)"
+              class="btn btn-outline btn-primary rounded-sm"
+            >
+              Interview
+            </button>
+            <button
+              onclick="handleRejectedClick(8)"
+              class="btn btn-outline btn-secondary rounded-sm"
+            >
+              Rejected
+            </button>
           </div>
         </div>
       </div>
@@ -347,7 +409,7 @@
       class="w-10/12 mx-auto space-y-2.5 mt-3.5 hidden"
     >
       <div
-        id="card-8"
+        id="interview-section-card"
         class="card bg-base-100 shadow w-full flex justify-center items-center space-y-2 p-27"
       >
         <div class="W-[220PX]">
@@ -366,13 +428,13 @@
       class="w-10/12 mx-auto space-y-2.5 mt-3.5 hidden"
     >
       <div
-        id="card-8"
+        id="rejected-section-card"
         class="card bg-base-100 shadow w-full flex justify-center items-center space-y-2 p-27"
       >
         <div class="W-[220PX]">
           <img src="assets/jobs.png" alt="" />
         </div>
-        <h1 class="text-neutral text-2xl">No jobs available</h1>
+        <h1 id="noJob" class="text-neutral text-2xl">No jobs available</h1>
         <p class="text-sm text-neutral">
           Check back soon for new job opportunities
         </p>
