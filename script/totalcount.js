@@ -20,35 +20,35 @@ function count() {
 }
 count();
 
-//get the main container
-const mainContainer = document.querySelector("main");
-// console.log(mainContainer);
+// //get the main container
+// const mainContainer = document.querySelector("main");
+// // console.log(mainContainer);
 
-mainContainer.addEventListener("click", function (event) {
-  const clickedCardParentNode = event.target.parentNode.parentNode.parentNode;
-  const cloneCard = clickedCardParentNode.cloneNode(true);
-  //   console.log('im m cloned',cloneCard);
+// mainContainer.addEventListener("click", function (event) {
+//   const clickedCardParentNode = event.target.parentNode.parentNode.parentNode;
+//   const cloneCard = clickedCardParentNode.cloneNode(true);
+//   //   console.log('im m cloned',cloneCard);
 
-   // Check if it's an interview button click
-  if (event.target.classList.contains('interview-btn') || event.target.closest('.interview-btn')) {
-    const interviewExits = interviewArrCount.find(
-      (item) => item.isEqualNode(cloneCard)
-    );
-    if (!interviewExits) {
-      interviewArrCount.push(cloneCard);
+// Function to add to interview count call this from interview.js
+function addToInterviewCount(cardId) {
+  const card = document.getElementById(`card-${cardId}`);
+  if (card) {
+    const exists = interviewArrCount.find(item => item.id === card.id);
+    if (!exists) {
+      interviewArrCount.push(card);
+      count();
     }
   }
-  
-  // Check if it's a reject button click
-  if (event.target.classList.contains('reject-btn') || event.target.closest('.reject-btn')) {
-    const rejectExits = rejectArrCount.find(
-      (item) => item.isEqualNode(cloneCard)
-    );
-    if (!rejectExits) {
-      rejectArrCount.push(cloneCard);
+}
+
+// Function to add to reject count call this from rejection.js
+function addToRejectCount(cardId) {
+  const card = document.getElementById(`card-${cardId}`);
+  if (card) {
+    const exists = rejectArrCount.find(item => item.id === card.id);
+    if (!exists) {
+      rejectArrCount.push(card);
+      count();
     }
   }
-  
-  // Update the count after pushing
-  count();
-});
+}

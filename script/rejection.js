@@ -31,4 +31,5 @@ function handleRejectedClick(cardNumber) {
 
   // apend the child
   parentDivInterview.appendChild(cloneCard);
+  addToRejectCount(cardNumber);
 }

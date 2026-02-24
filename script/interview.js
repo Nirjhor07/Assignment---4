@@ -46,4 +46,6 @@ function handleInterviewClick(cardNumber) {
 
   // apend the child
   parentDivInterview.appendChild(cloneCard);
+
+  addToInterviewCount(cardNumber);
 }
