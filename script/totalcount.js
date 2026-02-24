@@ -28,12 +28,13 @@ count();
 //   const clickedCardParentNode = event.target.parentNode.parentNode.parentNode;
 //   const cloneCard = clickedCardParentNode.cloneNode(true);
 //   //   console.log('im m cloned',cloneCard);
+// });
 
 // Function to add to interview count call this from interview.js
 function addToInterviewCount(cardId) {
   const card = document.getElementById(`card-${cardId}`);
   if (card) {
-    const exists = interviewArrCount.find(item => item.id === card.id);
+    const exists = interviewArrCount.find((item) => item.id === card.id);
     if (!exists) {
       interviewArrCount.push(card);
       count();
@@ -45,7 +46,7 @@ function addToInterviewCount(cardId) {
 function addToRejectCount(cardId) {
   const card = document.getElementById(`card-${cardId}`);
   if (card) {
-    const exists = rejectArrCount.find(item => item.id === card.id);
+    const exists = rejectArrCount.find((item) => item.id === card.id);
     if (!exists) {
       rejectArrCount.push(card);
       count();
