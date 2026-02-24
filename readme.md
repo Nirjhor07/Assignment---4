@@ -1,7 +1,7 @@
 ### 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
-Ans: All these functions are used to get the element from html doccument and manupulate them.(DOM manupulations)
-but their return statement make them diffrence from one to another.
+ ### Ans: All these functions are used to get the element from html doccument and manupulate them.(DOM manupulations)
+ ### but their return statement make them diffrence from one to another.
 
 function : 1 --> getElementById()
 getElementById search element by unique id and returns it.
@@ -38,9 +38,9 @@ const newChildDiv = document.createElement("div");
 // add element to the div
 newChildDiv.innerHTML = `
 
-<div>
-<h1>This is newChild created using DOM manupulations</h1>
-</div>
+### <div>
+### <h1>This is newChild created using DOM manupulations</h1>
+### </div>
 
 `;
 
